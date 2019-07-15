@@ -18,6 +18,7 @@ configure :build do
   activate :asset_hash
   activate :relative_assets
   set :relative_links, true
+  set :site_url, ""
   activate :favicon_maker do |f|
     f.template_dir  = File.join(root, 'source/images/favicons')
     f.output_dir    = File.join(root, 'source/images/favicons')
