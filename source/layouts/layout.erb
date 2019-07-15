@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-EN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title %></title>
+
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+
+    <%= stylesheet_link_tag "application" %>
+    <%= partial "layouts/favicons.html" %>
+
+    <!-- Uncomment this when you actually have a favicon.png in /images -->
+    <%#= favicon_tag 'images/favicon.png' %>
+  </head>
+  <body>
+    <div class="starry-background">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+    </div>
+    <%= partial "layouts/navbar.html" %>
+         <!-- status info -->
+    <%= yield %>
+    <%= partial "layouts/about.html" %>
+    <%= partial "layouts/contact.html" %>
+    <%= partial "layouts/footer.html" %>
+    <%= partial "layouts/emailsent.html" %>
+
+    <!-- We put the JS include tag after the yeild to prevent errors (when you try to select an element that is not already loaded on the page) -->
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>

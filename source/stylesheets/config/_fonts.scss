@@ -1,0 +1,24 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');;
+
+// Define fonts for body and headers
+$body-font: "Light", "Helvetica", "sans-serif";
+$headers-font: "Bold", "Helvetica", "sans-serif";
+
+// To use a font file (.woff) uncomment following lines
+@font-face {
+  font-family: "Bold";
+  src: font-url('bold.eot');
+  src: font-url('bold.eot?#iefix') format('embedded-opentype'),
+       font-url('bold.woff') format('woff'),
+       font-url('bold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: "Light";
+  src: font-url('light.eot');
+  src: font-url('light.eot?#iefix') format('embedded-opentype'),
+       font-url('light.woff') format('woff'),
+       font-url('light.ttf') format('truetype')
+}
+$my-font: "light";

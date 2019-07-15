@@ -1,0 +1,21 @@
+.navbar-manu {
+  justify-content: space-between;
+  scroll-snap-align: start;
+}
+
+.navbar-manu .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-manu .navbar-brand img {
+  width: 40px;
+}
+
+.navbar .nav-item {
+  font-family: $headers-font
+}
+
+.logo svg:hover path{
+  transition: fill .4s ease-in-out;
+  fill: $white;
+}

@@ -1,0 +1,15 @@
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  scroll-snap-align: start;
+  h1 {
+    color: $white;
+    margin: 0 50px 50px 50px;
+  }
+  p {
+    margin-top: 1.5em;
+  }
+}

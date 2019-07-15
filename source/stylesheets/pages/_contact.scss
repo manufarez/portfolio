@@ -1,0 +1,102 @@
+#contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  scroll-snap-align: start;
+  img {
+    width: 150px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  }
+  h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    color: $white;
+    text-align: center;
+  }
+  @include xs {
+    h3 {
+    font-size: 24px;
+    }
+    p {
+      font-size: 11px;
+    }
+    #simple-contact-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-size: 14px
+    }
+    #simple-contact-form input::-moz-placeholder { /* Firefox 19+ */
+      font-size: 14px
+    }
+    #simple-contact-form input:-ms-input-placeholder { /* IE 10+ */
+      font-size: 14px
+    }
+    #simple-contact-form input:-moz-placeholder { /* Firefox 18- */
+      font-size: 14px
+    }
+    #simple-contact-form textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-size: 14px
+    }
+    #simple-contact-form textarea::-moz-placeholder { /* Firefox 19+ */
+      font-size: 14px
+    }
+    #simple-contact-form textarea:-ms-input-placeholder { /* IE 10+ */
+      font-size: 14px
+    }
+    #simple-contact-form textarea:-moz-placeholder { /* Firefox 18- */
+      font-size: 14px
+    }
+  }
+  @include sm {
+    p {
+      font-size: 13px;
+    }
+    #simple-contact-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-size: 14px
+    }
+    #simple-contact-form input::-moz-placeholder { /* Firefox 19+ */
+      font-size: 14px
+    }
+    #simple-contact-form input:-ms-input-placeholder { /* IE 10+ */
+      font-size: 14px
+    }
+    #simple-contact-form input:-moz-placeholder { /* Firefox 18- */
+      font-size: 14px
+    }
+    #simple-contact-form textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-size: 14px
+    }
+    #simple-contact-form textarea::-moz-placeholder { /* Firefox 19+ */
+      font-size: 14px
+    }
+    #simple-contact-form textarea:-ms-input-placeholder { /* IE 10+ */
+      font-size: 14px
+    }
+    #simple-contact-form textarea:-moz-placeholder { /* Firefox 18- */
+      font-size: 14px
+    }
+  }
+}
+
+.contact-content {
+  margin: 0 300px;
+  width: 100%;
+}
+
+#contact form {
+  width: 100%;
+  margin: 20 0 0 0;
+}
+
+#contact form label{
+  font-family: bold;
+}
+
+.form-container {
+  margin-top: 30px;
+}
+
+#icon-twitter svg {
+  height: 22px;
+}

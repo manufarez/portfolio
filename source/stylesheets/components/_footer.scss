@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  color: $white;
+  scroll-snap-align: start;
+  @include xs {
+    display: none;
+  }
+}
+
+.footer-copyright {
+  opacity: 0.15;
+  font-size: 0.9em;
+  text-align: center;
+  @include sm {
+    font-size: 12px
+  }
+}
+
+.footer-copyright a {
+  color: $white;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.footer-links a {
+  color: $white;
+  opacity: 0.15;
+  text-decoration: none;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+.footer-links svg {
+  height: 26px;
+}
