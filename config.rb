@@ -13,11 +13,10 @@ page '/*.txt', layout: false
 
 configure :build do
   activate :minify_css
-  # ------ We commented this command as it prevented us to deploy our Middleman project on GitHub Pages ------
+  # ------ Commented this command if it prevents you to deploy our Middleman project on GitHub Pages ------
   # activate :minify_javascript
   activate :asset_hash
   activate :relative_assets
-  set :relative_links, true
   activate :favicon_maker do |f|
     f.template_dir  = File.join(root, 'source/images/favicons')
     f.output_dir    = File.join(root, 'source/images/favicons')
@@ -50,3 +49,4 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+

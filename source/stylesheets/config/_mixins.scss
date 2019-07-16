@@ -18,9 +18,24 @@
    }
 }
 
+@mixin md-min {
+   @media (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+
+
+
 // Large devices
 @mixin lg {
    @media (max-width: #{$screen-lg-max}) {
+       @content;
+   }
+}
+
+// Normal desktops and more
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
        @content;
    }
 }

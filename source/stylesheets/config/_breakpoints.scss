@@ -7,10 +7,11 @@ $screen-xs-max: 320px;
 $screen-sm-max: 576px;
 
 // Small tablets and large smartphones (landscape view)
+$screen-md-min: 768px;
 $screen-md-max: 768px;
 
 // Small tablets (portrait view)
 $screen-lg-max: 992px;
 
-// Tablets and small desktops
-$screen-xl-max: 1200px;
+// Tablets and small desktops and beyond
+$screen-xl-min: 1200px;

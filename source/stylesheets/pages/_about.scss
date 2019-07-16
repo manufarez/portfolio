@@ -16,11 +16,12 @@
     color: $white;
     text-align: center;
   }
+  @include sm {
+  h3 {
+      font-size: 24px;
+    }
+  }
 }
-
-// .about-content {
-//   // margin: 0 300px;
-// }
 
 .skills-text {
   margin-bottom: 1em;
@@ -28,10 +29,6 @@
     margin-bottom: 0.5em;
   }
 }
-
-// .skills-image {
-
-// }
 
 .about-content svg {
   max-height: 75px;
